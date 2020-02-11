@@ -14,13 +14,13 @@ class Counters extends Component {
     const counters = this.state.counters.filter(c => c.id !== counterId);
     this.setState({ counters });
   };
-  handleReset = () => {
-    this.state.counters.map(c => {
-      c.value = 0;
-      return c;
-    });
-    this.setState({ counters });
-  };
+  // handleReset = () => {
+  //   this.state.counters.map(c => {
+  //     c.value = 0;
+  //     return c;
+  //   });
+  //   this.setState({ counters });
+  // };
 
   render() {
     return (
